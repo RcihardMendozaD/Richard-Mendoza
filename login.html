@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cajero Automatico</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body class="col-sm-4 jumbotron text-center" >
+   
+   
+    <div id="login" class="container">
+        <h2>CAJETO AUTOMATICO</h2>
+        <div  class="form-group">
+            <label >Ingresar Nombre:</label>
+            <input id="nombre" type="text"  class="form-control"  placeholder="Ingresar datos">
+        </div>
+        <input type="button" class="btn btn-primary" value="Ingresar" id="btnLogear">
+    </div>
+
+
+
+
+
+    <div id="transaccion" class="alert alert-success" style="display: none;">
+        <h2 id="idNombre"></h2>
+        <h4>Por favor ingresar el tipo de operación que desea realizar.</h4>
+        <input type="button" class="btn btn-primary" value="Retiro" id="btnRetiro">
+        <input type="button" class="btn btn-primary" value="Depósito" id="btnDeposito">
+    </div>
+
+
+
+    <div id="retiro" style="display: none;" class="container">
+        <h5 id="pSaldo" style="text-align: right;        background: aquamarine;        width: 33%;"></h5>
+        <h2>RETIRO</h2>
+        <div class="form-group">
+            <label>Ingresar monto: </label>
+            <input id="montoRetiro" type="number" class="form-control"  placeholder="Ingresa cantidad">
+        </div>
+        <input type="button" class="btn btn-primary" value="PROCESAR" id="btnProcesarRetiro">
+    </div>
+
+    <div id="deposito" style="display: none;" class="container">
+        <h5 id="pSaldo2" style="text-align: right;        background: aquamarine;        width: 33%;"></h5>
+        <h2>DEPOSITO</h2>
+        <div class="form-group">
+            <label>Ingresar monto: </label>
+            <input id="montoDesposito" type="number" class="form-control"  placeholder="Ingresa cantidad">
+        </div>
+        <input type="button" class="btn btn-primary" value="PROCESAR" id="btnProcesarDeposito">
+    </div>
+
+    <div id="exitoso"  class="alert alert-success" style="display: none;">
+        <h2 id="saldoFinal"> </h2>
+
+
+    </div>
+   
+</body>
+<script src="index.js">
+
+</script>
+</html>
